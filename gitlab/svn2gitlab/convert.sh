@@ -55,7 +55,7 @@ git symbolic-ref HEAD refs/heads/trunk
 echo "Pushing to git repository... $name.git"
 cd ../$name.svn
 git remote add bare ../$name.git
-git config remote.bare.push 'refs/remotes/*:refs/heads/*'
+git config remote.bare.push 'refs/remotes/origin/*:refs/heads/*'
 git push bare
 
 echo "Renaming trunk to master..."
